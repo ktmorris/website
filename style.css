@@ -190,6 +190,9 @@ a:hover {
   object-fit: cover;
   object-position: top center;
   border-radius: 4px;
+  position: sticky;
+  top: 5rem;        /* holds the photo this far below the top while scrolling */
+  align-self: start; /* redundant with the grid's align-items:start, but explicit */
 }
 
 .hero-content h1 {
@@ -647,11 +650,12 @@ a:hover {
     gap: 1.5rem;
   }
 
-  .hero-photo {
+ .hero-photo {
     width: 260px;
     aspect-ratio: 3/4;
     border-radius: 4px;
     margin: 0 auto;
+    position: static;   /* add this */
   }
 
   .hero-content {
