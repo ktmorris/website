@@ -285,6 +285,17 @@ a:hover {
   align-items: start;
 }
 
+.cover-link {
+  display: block;
+}
+
+.cover-link img {
+  transition: opacity .15s;
+}
+
+.cover-link:hover img {
+  opacity: .88;
+}
 .book-cover-placeholder {
   width: 100%;
   aspect-ratio: 2/3;
