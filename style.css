@@ -476,7 +476,34 @@ a:hover {
   font-weight: 500;
 }
 
-/* ---- Book Praise ---- */
+/* ---- Book Pull Quote (above tabs) ---- */
+
+.book-feature .book-pullquote {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--color-heading);
+  border-left: 2px solid var(--color-accent-light);
+  padding-left: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.book-feature .book-pullquote span {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-style: normal;
+  color: var(--color-muted);
+  white-space: nowrap;
+}
+
+.book-feature .book-pullquote span a {
+  color: var(--color-muted);
+}
+
+.book-feature .book-pullquote span a:hover {
+  color: var(--color-link-hover);
+}
 
 /* ---- Book Tabs ---- */
 
@@ -515,7 +542,7 @@ a:hover {
 
 #tab-summary:checked ~ .book-tab-bar label[for="tab-summary"],
 #tab-praise:checked ~ .book-tab-bar label[for="tab-praise"],
-#tab-press:checked ~ .book-tab-bar label[for="tab-press"] {
+#tab-reviews:checked ~ .book-tab-bar label[for="tab-reviews"] {
   color: var(--color-heading);
   border-bottom-color: var(--color-accent);
 }
@@ -526,7 +553,7 @@ a:hover {
 
 #tab-summary:checked ~ #panel-summary,
 #tab-praise:checked ~ #panel-praise,
-#tab-press:checked ~ #panel-press {
+#tab-reviews:checked ~ #panel-reviews {
   display: block;
 }
 
@@ -786,6 +813,11 @@ a:hover {
   .book-feature .book-cover-placeholder {
     width: 150px;
     margin: 0 auto;
+  }
+
+  /* Three tabs: tighten padding so they fit on narrow phones */
+  .book-tab-bar label {
+    padding: 0.6rem 0.85rem;
   }
 
   .site-nav {
